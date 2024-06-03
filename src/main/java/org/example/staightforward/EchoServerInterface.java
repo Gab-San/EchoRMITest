@@ -1,8 +1,8 @@
-package org.example;
+package org.example.staightforward;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public interface EchoClientInterface extends Remote {
+public interface EchoServerInterface extends Remote {
     void echo(String msg) throws RemoteException;
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.forthandback;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -20,7 +20,7 @@ public class EchoClient extends UnicastRemoteObject implements EchoClientInterfa
     }
 
     public void send(String msg) throws RemoteException {
-        server.echo(msg);
+        server.echo(msg, this);
     }
 
     public static void main(String[] args) {
